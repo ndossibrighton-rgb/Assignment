@@ -1,0 +1,49 @@
+<div class="suggestion">
+
+  <h1>Internet Improvement Suggestion</h1>
+
+  <p>
+    Share your idea for improving internet services in our organization.
+  </p>
+
+  <form (ngSubmit)="submitSuggestion()">
+
+    <label>Full Name</label>
+    <input
+      type="text"
+      name="fullName"
+      [(ngModel)]="form.fullName"
+      readonly
+    >
+
+    <label>Contact</label>
+    <input
+      type="text"
+      name="contact"
+      [(ngModel)]="form.contact"
+      readonly
+    >
+
+    <label>Profession</label>
+    <input
+      type="text"
+      name="profession"
+      [(ngModel)]="form.profession"
+      readonly
+    >
+
+    <label>Your Suggestion</label>
+    <textarea
+      name="suggestion"
+      [(ngModel)]="form.suggestion"
+      placeholder="Write your suggestion"
+      required
+    ></textarea>
+
+    <button type="submit">
+      Submit Suggestion
+    </button>
+
+  </form>
+
+</div>

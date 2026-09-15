@@ -1,0 +1,48 @@
+
+.suggestion {
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.suggestion h1 {
+  text-align: center;
+}
+
+.suggestion p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 12px 0 5px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

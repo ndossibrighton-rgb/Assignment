@@ -1,0 +1,39 @@
+
+.dashboard {
+  min-height: 100vh;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.dashboard h1 {
+  margin-bottom: 10px;
+}
+
+.dashboard p {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
+  background: white;
+  color: #222;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.menu a:hover {
+  background: #eee;
+}
+

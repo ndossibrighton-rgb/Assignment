@@ -1,0 +1,51 @@
+<div class="profile">
+
+  <h1>My Profile</h1>
+
+  <form (ngSubmit)="saveProfile()">
+
+    <label>Full Name</label>
+    <input
+      type="text"
+      name="fullName"
+      [(ngModel)]="profile.fullName"
+      placeholder="Enter your full name"
+      required
+    >
+
+    <label>Gmail</label>
+    <input
+      type="email"
+      name="gmail"
+      [(ngModel)]="profile.gmail"
+      placeholder="example@gmail.com"
+      readonly
+    >
+
+    <label>Contact</label>
+    <input
+      type="text"
+      name="contact"
+      [(ngModel)]="profile.contact"
+      placeholder="Enter your contact"
+      required
+    >
+
+    <label>Profession</label>
+    <input
+      type="text"
+      name="profession"
+      [(ngModel)]="profile.profession"
+      placeholder="Enter your profession"
+      required
+    >
+
+    <button type="submit" [disabled]="loading">
+  {{ loading ? 'Saving...' : 'Save Changes' }}
+</button>
+
+<p class="message" *ngIf="message">
+  {{ message }}
+</p>
+
+  </form> 
